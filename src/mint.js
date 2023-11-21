@@ -6,7 +6,7 @@ import image3 from "./assets_4/mint3.png";
 import image4 from "./assets_4/mint4.png";
 import image5 from "./assets_4/mint5.png";
 import { BigNumber} from "@ethersproject/bignumber";
-const contractABI = require("/Users/macbook/nft-ls-app/src/CoastalSeasons.json")
+const contractABI = require("./CoastalSeasons.json")
 const ethers = require("ethers");
 
 // import  Landscape from  'NFT-ERC_721A.json'; EXTRACT API SO CAN USE CONTRACT

@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
-import '/Users/macbook/nft-ls-app/src/App.css';
+import './App.css';
 
 
 const NavBar = ({ web3Handler, account }) => {
