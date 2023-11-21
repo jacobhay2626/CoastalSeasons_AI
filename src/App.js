@@ -1,10 +1,10 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import "./App.css";
 import { useState } from 'react';
-import NavBar from './components/NavBar';
-import Home from '../../nft-ls-app/src/pages/about';
-import Gallery from '../../nft-ls-app/src/pages/gallery';
-import Mint from '../../nft-ls-app/src/pages/mint';
+import NavBar from './NavBar';
+import Home from './about';
+import Gallery from './gallery';
+import Mint from './mint';
 const ethers = require("ethers");
 
 
