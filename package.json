@@ -1,7 +1,6 @@
 {
   "name": "nft-ls-app",
   "version": "0.1.0",
-  "homepage": "https://jacobhay2626.github.io/CoastalSeasons_AI",
   "private": false,
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.0",
