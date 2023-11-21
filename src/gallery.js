@@ -17,7 +17,7 @@ export default function Gallery() {
     return (
         <div className='Gallery'>
             <h1 className='Gallery_header'> Gallery</h1>
-            <h2 className='Collection1'> Collection #1 - Preview (333)</h2>
+            <h2 className='Collection1'> Collection #1 - Preview (221)</h2>
             <motion.div ref={carousel} className='carousel' whileTap={{ cursor: 'grabbing' }}>
                 <motion.div
                     drag='x'
