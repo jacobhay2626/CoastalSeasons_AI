@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import "./App.css";
+import { useState } from 'react';
+import NavBar from './components/NavBar';
+import Home from '../../nft-ls-app/src/pages/about';
+import Gallery from '../../nft-ls-app/src/pages/gallery';
+import Mint from '../../nft-ls-app/src/pages/mint';
+const ethers = require("ethers");
+
+
 
 function App() {
+  const [loading, setLoading] = useState(true)
+  const [account, setAccount] = useState(null)
+  // const [accounts, setAccounts] = useState([])
+  // MetaMask Login/Connect
+  const web3Handler = async () => {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    setAccount(accounts[0])
+    // Get provider from Metamask
+    const provider = new ethers.BrowserProvider(window.ethereum)
+    // Set signer
+    const signer = provider.getSigner()
+
+    window.ethereum.on('chainChanged', (chainId) => {
+      window.location.reload();
+    })
+
+    window.ethereum.on('accountsChanged', async function (accounts) {
+      setAccount(accounts[0])
+      await web3Handler()
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <>
+        <NavBar web3Handler={web3Handler} account={account}/>
+        </>
+        <div>      
+          <Routes>
+            <Route index element={
+              <Home />
+            }/>
+            <Route path='/home' element={
+              <Home />
+            }/>
+            <Route path = '/gallery' element={
+              <Gallery />
+            } />
+            <Route path='/mint' element={
+              <Mint />
+            }/>
+          </Routes>
+          </div>
+        </div>
+      {/* <div className='moving-background'></div> */}
+    </BrowserRouter>  
   );
 }
 

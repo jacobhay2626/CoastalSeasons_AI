@@ -1,17 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Exo+2:wght@300&display=swap');
+
+
+
 .App {
   text-align: center;
+  font-family: 'Cormorant Garamond', serif;;
+  /* font-family:  'Exo 2', sans-serif; */
+  color: white;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow: hidden;
 }
+
+.overlay {
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +41,221 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.item{
+  min-height: 50-rem;
+  min-width: 60-rem;
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item img{
+  width: 250px; 
+  height:300px;
+  border-radius: 3rem;
+  pointer-events: none;
+}
+
+.inner-carousel{
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  margin: 7% 20%; 
+}
+
+.Gallery_header {
+  color: darkslategray;
+  position: relative;
+}
+
+.Collection1 {
+  position: relative;
+  top: 120px;
+  right: 320px;
+  font-size: 20px;
+  color:darkslategray;
+}
+
+.about_title {
+  position: relative;
+  right: 520px;
+  top: ;
+  bottom: ;
+  left: ;
+  color: darkslategray;
+}
+
+.Main_Title {
+  position: relative;
+  color: darkslategray;
+}
+
+.about_description {
+  position: relative;
+  color: black;
+  width: 400px;
+  right: 200px;
+  top: 10px;
+  font-size: larger;
+  margin-left: 210px;
+  margin-right: 250px;
+}
+
+.BRIGHT_LIGHT{
+position: relative;
+left: 70rem;
+right: auto;
+top: auto;
+bottom: 8.5rem;
+width:fit-content;
+}
+
+.bright_light {
+border-style: solid;
+border-color: floralwhite;
+border-width: 3px;
+filter: drop-shadow(10px 10px 0.5rem black);
+border-radius: 8px;
+width: 200px;
+height: 200px;
+}
+
+.PAINT_AUTUMN{
+  position: relative;
+  left: 70rem;
+  right: auto;
+  top: auto;
+  bottom: 570px;
+  width:fit-content;
+}
+
+.paint_autumn{
+border-style: solid;
+border-color: floralwhite;
+border-width: 3px;
+filter: drop-shadow(10px 10px 0.5rem black);
+border-radius: 8px;
+width: 200px;
+height: 200px;
+}
+
+.SWIRL_COLOUR{
+  position: relative;
+  left: 70rem;
+  right: auto;
+  top: auto;
+  bottom: 1000px;
+  width:fit-content;
+}
+
+.swirl_colour {
+border-style: solid;
+border-width: 3px;
+border-color: floralwhite;
+filter: drop-shadow(10px 10px 0.5rem black);
+border-radius: 8px;
+width: 200px;
+height: 200px;
+}
+
+
+.SWIRL_CENTER{
+position: relative;
+left: 31.5rem;
+right: auto;
+top: auto;
+bottom: 68rem;
+width:fit-content;
+
+}
+.swirl_main{
+border-style: solid;
+border-width: 3px;
+border-color: floralwhite;
+filter: drop-shadow(10px 10px 0.5rem black);
+border-radius: 8px;
+width: 430px;
+height: 430px;
+}
+
+.Mint_Page{
+  background-color: rgb(225, 236, 243);
+}
+
+.Mint_Main_Section {
+  position: relative;
+  margin-top: 9rem;
+  margin-right: 50rem;
+}
+
+.Mint1 {
+  position:relative;
+  border-width: 3px;
+  border-color: white;
+  filter: drop-shadow(10px 10px 0.5rem black);
+  width: 150px;
+  height:150px;
+  border-radius: 10px;
+  top: auto;
+  left: 18rem;
+  right: auto;
+  bottom: 15rem;
+}
+
+.Mint2 {
+  position:relative;
+  border-width: 3px;
+  border-color: white;
+  filter: drop-shadow(10px 10px 0.5rem black);
+  width: 150px;
+  height:150px;
+  border-radius: 10px;
+  top: auto;
+  left: 26.5rem;
+  right: auto;
+  bottom: 15rem;
+}
+
+.Mint3 {
+  position:relative;
+  border-width: 3px;
+  border-color: white;
+  filter: drop-shadow(10px 10px 0.5rem black);
+  width: 150px;
+  height:150px;
+  border-radius: 10px;
+  top: auto;
+  left: 36rem;
+  right: auto;
+  bottom: 15rem;
+}
+
+.Mint4 {
+  position:relative;
+  border-width: 3px;
+  border-color: white;
+  filter: drop-shadow(10px 10px 0.5rem black);
+  width: 150px;
+  height:150px;
+  border-radius: 10px;
+  top: auto;
+  left: 45rem;
+  right: auto;
+  bottom: 15rem;
+}
+
+.Mint5 {
+  position:relative;
+  border-width: 3px;
+  border-color: white;
+  filter: drop-shadow(10px 10px 0.5rem black);
+  width: 150px;
+  height:150px;
+  border-radius: 10px;
+  top: auto;
+  left: 55rem;
+  right: auto;
+  bottom: 15rem;
 }
