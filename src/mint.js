@@ -62,7 +62,7 @@ const Mint = ({}) => {
                         letterSpacing={"-5.5%"}
                         fontFamily={"VT323"}
                     > 
-                        Collection #1: 333 <br/>
+                        Collection #1: 221 <br/>
                         Public Mint Price: 0.012ETH <br/>
                         MAX 3 Mints per Wallet <br/>
                         CONNECT WALLET TO MINT
