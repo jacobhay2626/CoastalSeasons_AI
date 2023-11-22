@@ -17,7 +17,7 @@ export default function Home() {
                 <br/><br/>
                 Join us on this journey today, connect your wallet and navigate through our gallery to see some examples of collection #1. This is just the first step on this journey and we know with your support through the forthcoming projects we will make a real impact in this community. 
                 <br/><br/>
-                The Coatsal A.I. Team. 
+                The Coastal A.I. Team. 
  
                 </p>
 
